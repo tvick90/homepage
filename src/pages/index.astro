@@ -39,19 +39,19 @@ const SOCIALS = [
 				<!-- Header Avatar and Name -->
 				<div class="flex w-full">
 					<div class="flex items-center gap-8 grow">
-						<img class="h-32 rounded-full" src="headshot.png" alt="Headshot photo">
 						<div class="flex flex-row grow items-center">
 
-							<div class="flex flex-col grow">
+							<!-- Logo -->
+							<img src="logo.svg" alt="Logo image" class="md:h-8 h-5">
 
-								<h1 class="text-5xl font-bold font-altsans">Taylor Vick</h1>
+							<div class="flex flex-col grow"></div>
 
-							</div>
+							<!-- Socials -->
 							<div class="flex text-sm text-gray-500 gap-2 align-self-end">
 								{
 									SOCIALS.map(({ icon, text, link }) => (
-										<a href={link} class="flex flex-row bg-white rounded-md gap-4 hover:-translate-y-1 transition-all flex-1 items-center p-2">
-											<img src={icon} class="w-8 h-8">
+										<a href={link} class="flex flex-row bg-white rounded-md md:gap-4 gap-2 hover:-translate-y-1 transition-all flex-1 items-center p-2">
+											<img src={icon} class="md:w-8 md:h-8 w-5 h-5">
 										</a>
 									))
 								}
@@ -63,8 +63,14 @@ const SOCIALS = [
 			</div>
 		</header>
 
-		<main class="max-w-2xl py-8 mx-auto overflow-auto">
-			<div>Inside</div>
+		<main class="max-w-2xl px-8 mx-auto overflow-auto">
+
+			<!-- Inner Wrapper -->
+			<div class="flex">
+				<div>Inside</div>
+				<img class="h-32 rounded-full" src="headshot.png" alt="Headshot photo">
+			</div>
+		
 		</main>
 
 	</body>
